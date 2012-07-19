@@ -194,11 +194,7 @@
 		3C93672815B0FF6600860E6A /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C93672715B0FF6600860E6A /* AppController.mm */; };
 		3C93672B15B0FF6600860E6A /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C93672A15B0FF6600860E6A /* RootViewController.mm */; };
 		3C93672F15B0FF6600860E6A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C93672E15B0FF6600860E6A /* AppDelegate.mm */; };
-		3C93673215B0FF6600860E6A /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3C93673115B0FF6600860E6A /* HelloWorldScene.cpp */; };
-		3CAB259715B7A9B60003DDE2 /* SceneGame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB259615B7A9B60003DDE2 /* SceneGame.mm */; };
-		3CAB259C15B7AB870003DDE2 /* DataMgr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB259B15B7AB870003DDE2 /* DataMgr.mm */; };
 		3CAB25A915B7D2070003DDE2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB25A815B7D2070003DDE2 /* libsqlite3.0.dylib */; };
-		3CAB25AF15B7D63B0003DDE2 /* SQLiteiOS.m in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB25AE15B7D63B0003DDE2 /* SQLiteiOS.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -603,17 +599,15 @@
 		3C93672A15B0FF6600860E6A /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = "<group>"; };
 		3C93672D15B0FF6600860E6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
 		3C93672E15B0FF6600860E6A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
-		3C93673015B0FF6600860E6A /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
-		3C93673115B0FF6600860E6A /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
-		3CAB259515B7A9AE0003DDE2 /* SceneGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneGame.h; sourceTree = "<group>"; };
-		3CAB259615B7A9B60003DDE2 /* SceneGame.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SceneGame.mm; sourceTree = "<group>"; };
-		3CAB259B15B7AB870003DDE2 /* DataMgr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DataMgr.mm; sourceTree = "<group>"; };
-		3CAB259D15B7AB930003DDE2 /* DataMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataMgr.h; sourceTree = "<group>"; };
-		3CAB259F15B7ACDC0003DDE2 /* DataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataType.h; sourceTree = "<group>"; };
 		3CAB25A815B7D2070003DDE2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		3CAB25AD15B7D63B0003DDE2 /* SQLiteiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteiOS.h; sourceTree = "<group>"; };
-		3CAB25AE15B7D63B0003DDE2 /* SQLiteiOS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteiOS.m; sourceTree = "<group>"; };
 		3CAB25B015B7EF9D0003DDE2 /* ObjectDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = ObjectDB.sqlite; path = Resources/ObjectDB.sqlite; sourceTree = "<group>"; };
+		3CAB25BA15B80EB00003DDE2 /* DataMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DataMgr.h; path = Classes/DataMgr.h; sourceTree = "<group>"; };
+		3CAB25BB15B80EB00003DDE2 /* DataMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = DataMgr.mm; path = Classes/DataMgr.mm; sourceTree = "<group>"; };
+		3CAB25BC15B80EBE0003DDE2 /* DataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DataType.h; path = Classes/DataType.h; sourceTree = "<group>"; };
+		3CAB25BD15B80EC40003DDE2 /* SceneGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneGame.h; path = Classes/SceneGame.h; sourceTree = "<group>"; };
+		3CAB25BE15B80EC40003DDE2 /* SceneGame.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = SceneGame.mm; path = Classes/SceneGame.mm; sourceTree = "<group>"; };
+		3CAB25BF15B80ECB0003DDE2 /* SQLiteiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SQLiteiOS.h; path = Classes/SQLiteiOS.h; sourceTree = "<group>"; };
+		3CAB25C015B80ECB0003DDE2 /* SQLiteiOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SQLiteiOS.m; path = Classes/SQLiteiOS.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -682,8 +676,6 @@
 				3CAB259215B7A9730003DDE2 /* Scene */,
 				3CAB259115B7A96D0003DDE2 /* Data */,
 				3CAB258F15B7A9420003DDE2 /* AppDelegate */,
-				3C93673015B0FF6600860E6A /* HelloWorldScene.h */,
-				3C93673115B0FF6600860E6A /* HelloWorldScene.cpp */,
 			);
 			path = MobileSNG;
 			sourceTree = "<group>";
@@ -1483,8 +1475,8 @@
 		3CAB259315B7A9780003DDE2 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				3CAB259515B7A9AE0003DDE2 /* SceneGame.h */,
-				3CAB259615B7A9B60003DDE2 /* SceneGame.mm */,
+				3CAB25BD15B80EC40003DDE2 /* SceneGame.h */,
+				3CAB25BE15B80EC40003DDE2 /* SceneGame.mm */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -1499,7 +1491,7 @@
 		3CAB259815B7AB6F0003DDE2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3CAB259F15B7ACDC0003DDE2 /* DataType.h */,
+				3CAB25BC15B80EBE0003DDE2 /* DataType.h */,
 				3CAB25A115B7BDBB0003DDE2 /* Mgr */,
 			);
 			name = Data;
@@ -1522,10 +1514,10 @@
 		3CAB25A115B7BDBB0003DDE2 /* Mgr */ = {
 			isa = PBXGroup;
 			children = (
-				3CAB259B15B7AB870003DDE2 /* DataMgr.mm */,
-				3CAB259D15B7AB930003DDE2 /* DataMgr.h */,
-				3CAB25AD15B7D63B0003DDE2 /* SQLiteiOS.h */,
-				3CAB25AE15B7D63B0003DDE2 /* SQLiteiOS.m */,
+				3CAB25BF15B80ECB0003DDE2 /* SQLiteiOS.h */,
+				3CAB25C015B80ECB0003DDE2 /* SQLiteiOS.m */,
+				3CAB25BA15B80EB00003DDE2 /* DataMgr.h */,
+				3CAB25BB15B80EB00003DDE2 /* DataMgr.mm */,
 			);
 			name = Mgr;
 			sourceTree = "<group>";
@@ -1769,10 +1761,6 @@
 				3C93672815B0FF6600860E6A /* AppController.mm in Sources */,
 				3C93672B15B0FF6600860E6A /* RootViewController.mm in Sources */,
 				3C93672F15B0FF6600860E6A /* AppDelegate.mm in Sources */,
-				3C93673215B0FF6600860E6A /* HelloWorldScene.cpp in Sources */,
-				3CAB259715B7A9B60003DDE2 /* SceneGame.mm in Sources */,
-				3CAB259C15B7AB870003DDE2 /* DataMgr.mm in Sources */,
-				3CAB25AF15B7D63B0003DDE2 /* SQLiteiOS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
