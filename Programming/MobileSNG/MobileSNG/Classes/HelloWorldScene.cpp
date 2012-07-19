@@ -61,7 +61,13 @@ bool HelloWorld::init()
 
     // add the label as a child to this layer
     this->addChild(pLabel, 1);
-
+  
+    CCMoveTo *move = CCMoveTo::create(5.f, CCPointMake(300, 300));
+    CCRotateBy *rotate = CCRotateBy::create(3.f, 180.f);
+    CCSequence *sequence = CCSequence::create(move, rotate);
+    
+    pLabel->runAction(sequence);
+        
     // add "HelloWorld" splash screen"
     CCSprite* pSprite = CCSprite::create("HelloWorld.png");
 

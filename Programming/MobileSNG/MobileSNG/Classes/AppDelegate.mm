@@ -10,6 +10,7 @@
 
 #include "cocos2d.h"
 #include "HelloWorldScene.h"
+#include "SceneGame.h"
 
 USING_NS_CC;
 
@@ -42,6 +43,10 @@ bool AppDelegate::applicationDidFinishLaunching()
 
     // run
     pDirector->runWithScene(pScene);
+    
+    SceneGame scn;
+    scn.init();
+    
 
     return true;
 }
