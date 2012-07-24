@@ -1,24 +1,21 @@
-//
-//  SceneGame.h
-//  MobileSNG
-//
-//  Created by 박 진 on 12. 7. 19..
-//  Copyright (c) 2012년 __MyCompanyName__. All rights reserved.
-//
-
 #pragma once
 
 #include "cocos2d.h"
-#include "DataMgr.h"
+#include "UIMgr.h"
 
 class SceneGame : public cocos2d::CCLayer
 {
-    DataMgr *m_pDataMgr;
+private:
+    UIMgr           *m_pUIMgr;
     
-    
-public:    
+public:
     SceneGame();
     ~SceneGame();
     
+public:
     bool init();
+    
+private:
+    void _editFunc(CCObject *pSender);
+    void _flatFunc(CCObject *pSender);
 };

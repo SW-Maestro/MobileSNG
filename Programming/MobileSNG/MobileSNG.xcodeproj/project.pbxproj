@@ -193,8 +193,18 @@
 		3C93672515B0FF6600860E6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C93672415B0FF6600860E6A /* main.m */; };
 		3C93672815B0FF6600860E6A /* AppController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C93672715B0FF6600860E6A /* AppController.mm */; };
 		3C93672B15B0FF6600860E6A /* RootViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C93672A15B0FF6600860E6A /* RootViewController.mm */; };
-		3C93672F15B0FF6600860E6A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3C93672E15B0FF6600860E6A /* AppDelegate.mm */; };
 		3CAB25A915B7D2070003DDE2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB25A815B7D2070003DDE2 /* libsqlite3.0.dylib */; };
+		3CAB25C215B815230003DDE2 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB25C115B815230003DDE2 /* AppDelegate.cpp */; };
+		3CAB286A15BCF7590003DDE2 /* DataMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB285F15BCF7580003DDE2 /* DataMgr.cpp */; };
+		3CAB286B15BCF7590003DDE2 /* FileSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB286215BCF7580003DDE2 /* FileSystem.cpp */; };
+		3CAB286D15BCF7590003DDE2 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB286615BCF7580003DDE2 /* SceneGame.cpp */; };
+		3CAB286E15BCF7590003DDE2 /* UIMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB286815BCF7580003DDE2 /* UIMgr.cpp */; };
+		3CAB287115BCFB150003DDE2 /* Shop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB287015BCFB150003DDE2 /* Shop.cpp */; };
+		3CAB288015BD0E3D0003DDE2 /* Edit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287C15BD0E3D0003DDE2 /* Edit.png */; };
+		3CAB288115BD0E3D0003DDE2 /* Flat.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287D15BD0E3D0003DDE2 /* Flat.png */; };
+		3CAB288215BD0E3D0003DDE2 /* Friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287E15BD0E3D0003DDE2 /* Friends.png */; };
+		3CAB288315BD0E3D0003DDE2 /* Shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287F15BD0E3D0003DDE2 /* Shop.png */; };
+		3CAB28A615BDC40E0003DDE2 /* box.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB28A515BDC40E0003DDE2 /* box.xml */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -598,16 +608,24 @@
 		3C93672915B0FF6600860E6A /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = ios/RootViewController.h; sourceTree = "<group>"; };
 		3C93672A15B0FF6600860E6A /* RootViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = RootViewController.mm; path = ios/RootViewController.mm; sourceTree = "<group>"; };
 		3C93672D15B0FF6600860E6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Classes/AppDelegate.h; sourceTree = "<group>"; };
-		3C93672E15B0FF6600860E6A /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = Classes/AppDelegate.mm; sourceTree = "<group>"; };
 		3CAB25A815B7D2070003DDE2 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
-		3CAB25B015B7EF9D0003DDE2 /* ObjectDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = ObjectDB.sqlite; path = Resources/ObjectDB.sqlite; sourceTree = "<group>"; };
-		3CAB25BA15B80EB00003DDE2 /* DataMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DataMgr.h; path = Classes/DataMgr.h; sourceTree = "<group>"; };
-		3CAB25BB15B80EB00003DDE2 /* DataMgr.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = DataMgr.mm; path = Classes/DataMgr.mm; sourceTree = "<group>"; };
-		3CAB25BC15B80EBE0003DDE2 /* DataType.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = DataType.h; path = Classes/DataType.h; sourceTree = "<group>"; };
-		3CAB25BD15B80EC40003DDE2 /* SceneGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SceneGame.h; path = Classes/SceneGame.h; sourceTree = "<group>"; };
-		3CAB25BE15B80EC40003DDE2 /* SceneGame.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = SceneGame.mm; path = Classes/SceneGame.mm; sourceTree = "<group>"; };
-		3CAB25BF15B80ECB0003DDE2 /* SQLiteiOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SQLiteiOS.h; path = Classes/SQLiteiOS.h; sourceTree = "<group>"; };
-		3CAB25C015B80ECB0003DDE2 /* SQLiteiOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = SQLiteiOS.m; path = Classes/SQLiteiOS.m; sourceTree = "<group>"; };
+		3CAB25C115B815230003DDE2 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
+		3CAB285F15BCF7580003DDE2 /* DataMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataMgr.cpp; path = Classes/DataMgr.cpp; sourceTree = "<group>"; };
+		3CAB286015BCF7580003DDE2 /* DataMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataMgr.h; path = Classes/DataMgr.h; sourceTree = "<group>"; };
+		3CAB286115BCF7580003DDE2 /* DataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataType.h; path = Classes/DataType.h; sourceTree = "<group>"; };
+		3CAB286215BCF7580003DDE2 /* FileSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSystem.cpp; path = Classes/FileSystem.cpp; sourceTree = "<group>"; };
+		3CAB286315BCF7580003DDE2 /* FileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSystem.h; path = Classes/FileSystem.h; sourceTree = "<group>"; };
+		3CAB286615BCF7580003DDE2 /* SceneGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGame.cpp; path = Classes/SceneGame.cpp; sourceTree = "<group>"; };
+		3CAB286715BCF7580003DDE2 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneGame.h; path = Classes/SceneGame.h; sourceTree = "<group>"; };
+		3CAB286815BCF7580003DDE2 /* UIMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIMgr.cpp; path = Classes/UIMgr.cpp; sourceTree = "<group>"; };
+		3CAB286915BCF7580003DDE2 /* UIMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UIMgr.h; path = Classes/UIMgr.h; sourceTree = "<group>"; };
+		3CAB286F15BCFAF60003DDE2 /* Shop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Shop.h; path = Classes/Shop.h; sourceTree = "<group>"; };
+		3CAB287015BCFB150003DDE2 /* Shop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Shop.cpp; path = Classes/Shop.cpp; sourceTree = "<group>"; };
+		3CAB287C15BD0E3D0003DDE2 /* Edit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Edit.png; path = Resources/Edit.png; sourceTree = "<group>"; };
+		3CAB287D15BD0E3D0003DDE2 /* Flat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Flat.png; path = Resources/Flat.png; sourceTree = "<group>"; };
+		3CAB287E15BD0E3D0003DDE2 /* Friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Friends.png; path = Resources/Friends.png; sourceTree = "<group>"; };
+		3CAB287F15BD0E3D0003DDE2 /* Shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shop.png; path = Resources/Shop.png; sourceTree = "<group>"; };
+		3CAB28A515BDC40E0003DDE2 /* box.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = box.xml; path = Resources/box.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -672,7 +690,6 @@
 			children = (
 				3CAB259815B7AB6F0003DDE2 /* Data */,
 				3CAB259A15B7AB7A0003DDE2 /* ObjectMgr */,
-				3CAB259915B7AB740003DDE2 /* UI */,
 				3CAB259215B7A9730003DDE2 /* Scene */,
 				3CAB259115B7A96D0003DDE2 /* Data */,
 				3CAB258F15B7A9420003DDE2 /* AppDelegate */,
@@ -683,8 +700,12 @@
 		3C9364C515B0FF6300860E6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				3CAB25B015B7EF9D0003DDE2 /* ObjectDB.sqlite */,
+				3CAB28A515BDC40E0003DDE2 /* box.xml */,
 				3C9364C615B0FF6300860E6A /* CloseNormal.png */,
+				3CAB287C15BD0E3D0003DDE2 /* Edit.png */,
+				3CAB287D15BD0E3D0003DDE2 /* Flat.png */,
+				3CAB287E15BD0E3D0003DDE2 /* Friends.png */,
+				3CAB287F15BD0E3D0003DDE2 /* Shop.png */,
 				3C9364C815B0FF6300860E6A /* CloseSelected.png */,
 				3C9364CA15B0FF6300860E6A /* Default.png */,
 				3C9364CC15B0FF6300860E6A /* HelloWorld.png */,
@@ -1450,8 +1471,8 @@
 		3CAB258F15B7A9420003DDE2 /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				3CAB25C115B815230003DDE2 /* AppDelegate.cpp */,
 				3C93672D15B0FF6600860E6A /* AppDelegate.h */,
-				3C93672E15B0FF6600860E6A /* AppDelegate.mm */,
 			);
 			name = AppDelegate;
 			sourceTree = "<group>";
@@ -1475,8 +1496,9 @@
 		3CAB259315B7A9780003DDE2 /* Game */ = {
 			isa = PBXGroup;
 			children = (
-				3CAB25BD15B80EC40003DDE2 /* SceneGame.h */,
-				3CAB25BE15B80EC40003DDE2 /* SceneGame.mm */,
+				3CAB286615BCF7580003DDE2 /* SceneGame.cpp */,
+				3CAB286715BCF7580003DDE2 /* SceneGame.h */,
+				3CAB285815BCEF7B0003DDE2 /* UI */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -1491,17 +1513,12 @@
 		3CAB259815B7AB6F0003DDE2 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				3CAB25BC15B80EBE0003DDE2 /* DataType.h */,
+				3CAB286115BCF7580003DDE2 /* DataType.h */,
+				3CAB286215BCF7580003DDE2 /* FileSystem.cpp */,
+				3CAB286315BCF7580003DDE2 /* FileSystem.h */,
 				3CAB25A115B7BDBB0003DDE2 /* Mgr */,
 			);
 			name = Data;
-			sourceTree = "<group>";
-		};
-		3CAB259915B7AB740003DDE2 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = UI;
 			sourceTree = "<group>";
 		};
 		3CAB259A15B7AB7A0003DDE2 /* ObjectMgr */ = {
@@ -1514,12 +1531,37 @@
 		3CAB25A115B7BDBB0003DDE2 /* Mgr */ = {
 			isa = PBXGroup;
 			children = (
-				3CAB25BF15B80ECB0003DDE2 /* SQLiteiOS.h */,
-				3CAB25C015B80ECB0003DDE2 /* SQLiteiOS.m */,
-				3CAB25BA15B80EB00003DDE2 /* DataMgr.h */,
-				3CAB25BB15B80EB00003DDE2 /* DataMgr.mm */,
+				3CAB285F15BCF7580003DDE2 /* DataMgr.cpp */,
+				3CAB286015BCF7580003DDE2 /* DataMgr.h */,
 			);
 			name = Mgr;
+			sourceTree = "<group>";
+		};
+		3CAB285815BCEF7B0003DDE2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB287315BCFB3D0003DDE2 /* what */,
+				3CAB287215BCFB350003DDE2 /* Shop */,
+				3CAB286815BCF7580003DDE2 /* UIMgr.cpp */,
+				3CAB286915BCF7580003DDE2 /* UIMgr.h */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		3CAB287215BCFB350003DDE2 /* Shop */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB286F15BCFAF60003DDE2 /* Shop.h */,
+				3CAB287015BCFB150003DDE2 /* Shop.cpp */,
+			);
+			name = Shop;
+			sourceTree = "<group>";
+		};
+		3CAB287315BCFB3D0003DDE2 /* what */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = what;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1585,6 +1627,11 @@
 				3C9364DC15B0FF6300860E6A /* iTunesArtwork in Resources */,
 				3C9364DE15B0FF6300860E6A /* fps_images.png in Resources */,
 				3C9365D915B0FF6400860E6A /* ChangeLog in Resources */,
+				3CAB288015BD0E3D0003DDE2 /* Edit.png in Resources */,
+				3CAB288115BD0E3D0003DDE2 /* Flat.png in Resources */,
+				3CAB288215BD0E3D0003DDE2 /* Friends.png in Resources */,
+				3CAB288315BD0E3D0003DDE2 /* Shop.png in Resources */,
+				3CAB28A615BDC40E0003DDE2 /* box.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1760,7 +1807,12 @@
 				3C93672515B0FF6600860E6A /* main.m in Sources */,
 				3C93672815B0FF6600860E6A /* AppController.mm in Sources */,
 				3C93672B15B0FF6600860E6A /* RootViewController.mm in Sources */,
-				3C93672F15B0FF6600860E6A /* AppDelegate.mm in Sources */,
+				3CAB25C215B815230003DDE2 /* AppDelegate.cpp in Sources */,
+				3CAB286A15BCF7590003DDE2 /* DataMgr.cpp in Sources */,
+				3CAB286B15BCF7590003DDE2 /* FileSystem.cpp in Sources */,
+				3CAB286D15BCF7590003DDE2 /* SceneGame.cpp in Sources */,
+				3CAB286E15BCF7590003DDE2 /* UIMgr.cpp in Sources */,
+				3CAB287115BCFB150003DDE2 /* Shop.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
