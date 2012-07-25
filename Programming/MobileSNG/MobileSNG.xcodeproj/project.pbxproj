@@ -206,6 +206,7 @@
 		3CAB288315BD0E3D0003DDE2 /* Shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287F15BD0E3D0003DDE2 /* Shop.png */; };
 		3CAB28A615BDC40E0003DDE2 /* box.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB28A515BDC40E0003DDE2 /* box.xml */; };
 		3CAB28CB15BF23080003DDE2 /* ObjectDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */; };
+		3CAB28CE15BFD4980003DDE2 /* GameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB28CD15BFD4970003DDE2 /* GameSystem.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -628,6 +629,12 @@
 		3CAB28A515BDC40E0003DDE2 /* box.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = box.xml; path = Resources/box.xml; sourceTree = "<group>"; };
 		3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = ObjectDB.sqlite; path = Resources/ObjectDB.sqlite; sourceTree = "<group>"; };
 		3CAB28CC15BFCA1B0003DDE2 /* ObjectInfoMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjectInfoMgr.h; path = Classes/ObjectInfoMgr.h; sourceTree = "<group>"; };
+		3CAB28CD15BFD4970003DDE2 /* GameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSystem.cpp; path = Classes/GameSystem.cpp; sourceTree = "<group>"; };
+		3CAB28CF15BFD4A50003DDE2 /* GameSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GameSystem.h; path = Classes/GameSystem.h; sourceTree = "<group>"; };
+		3CAB28D115BFD9DB0003DDE2 /* rapidxml.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml.hpp; sourceTree = "<group>"; };
+		3CAB28D215BFD9DB0003DDE2 /* rapidxml_iterators.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_iterators.hpp; sourceTree = "<group>"; };
+		3CAB28D315BFD9DB0003DDE2 /* rapidxml_print.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_print.hpp; sourceTree = "<group>"; };
+		3CAB28D415BFD9DB0003DDE2 /* rapidxml_utils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = rapidxml_utils.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -653,6 +660,7 @@
 		3C9364A515B0FF6300860E6A = {
 			isa = PBXGroup;
 			children = (
+				3CAB28D015BFD9D90003DDE2 /* RapidXML */,
 				3C93672115B0FF6600860E6A /* Supporting Files */,
 				3C93672315B0FF6600860E6A /* ios */,
 				3C9364C515B0FF6300860E6A /* Resources */,
@@ -1502,6 +1510,8 @@
 				3CAB286615BCF7580003DDE2 /* SceneGame.cpp */,
 				3CAB286715BCF7580003DDE2 /* SceneGame.h */,
 				3CAB285815BCEF7B0003DDE2 /* UI */,
+				3CAB28CD15BFD4970003DDE2 /* GameSystem.cpp */,
+				3CAB28CF15BFD4A50003DDE2 /* GameSystem.h */,
 			);
 			name = Game;
 			sourceTree = "<group>";
@@ -1565,6 +1575,18 @@
 			children = (
 			);
 			name = what;
+			sourceTree = "<group>";
+		};
+		3CAB28D015BFD9D90003DDE2 /* RapidXML */ = {
+			isa = PBXGroup;
+			children = (
+				3CAB28D115BFD9DB0003DDE2 /* rapidxml.hpp */,
+				3CAB28D215BFD9DB0003DDE2 /* rapidxml_iterators.hpp */,
+				3CAB28D315BFD9DB0003DDE2 /* rapidxml_print.hpp */,
+				3CAB28D415BFD9DB0003DDE2 /* rapidxml_utils.hpp */,
+			);
+			name = RapidXML;
+			path = MobileSNG/RapidXML;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1817,6 +1839,7 @@
 				3CAB286D15BCF7590003DDE2 /* SceneGame.cpp in Sources */,
 				3CAB286E15BCF7590003DDE2 /* UIMgr.cpp in Sources */,
 				3CAB287115BCFB150003DDE2 /* Shop.cpp in Sources */,
+				3CAB28CE15BFD4980003DDE2 /* GameSystem.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
