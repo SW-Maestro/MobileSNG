@@ -39,7 +39,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     SceneGame *pScene = new SceneGame;
     pScene->init();
     pDirector->runWithScene((CCScene*)pScene);
-    
+        
     return true;
 }
 

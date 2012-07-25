@@ -10,19 +10,23 @@
 
 #include "DataType.h"
 #include <vector>
-#include "FileSystem.h"
+#include "ObjectInfoMgr.h"
 
 class DataMgr
 {
 private:
-    std::vector<BUILDING_INFO>      m_buildInfo;
-    std::vector<CROP_INFO>          m_cropInfo;
-    std::vector<ORANAMENT_INFO>     m_oranamentInfo;
+    ObjectInfoMgr                      *m_pObjectInfoMgr;
+    USER_INFO                           m_userInfo;
+
+    /*
+     으음.. 맵 정리하는거 해야할거 같은데 말야
+     
+     */
     
 public:
-    DataMgr();
+    DataMgr(const char *ObjectDBName);
     ~DataMgr();
 
 public:
-    bool loadData(const char *DBPath);
+    ObjectInfoMgr* GetObjectInfoMgr();
 };

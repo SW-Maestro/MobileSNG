@@ -196,7 +196,7 @@
 		3CAB25A915B7D2070003DDE2 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3CAB25A815B7D2070003DDE2 /* libsqlite3.0.dylib */; };
 		3CAB25C215B815230003DDE2 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB25C115B815230003DDE2 /* AppDelegate.cpp */; };
 		3CAB286A15BCF7590003DDE2 /* DataMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB285F15BCF7580003DDE2 /* DataMgr.cpp */; };
-		3CAB286B15BCF7590003DDE2 /* FileSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB286215BCF7580003DDE2 /* FileSystem.cpp */; };
+		3CAB286B15BCF7590003DDE2 /* ObjectInfoMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB286215BCF7580003DDE2 /* ObjectInfoMgr.cpp */; };
 		3CAB286D15BCF7590003DDE2 /* SceneGame.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB286615BCF7580003DDE2 /* SceneGame.cpp */; };
 		3CAB286E15BCF7590003DDE2 /* UIMgr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB286815BCF7580003DDE2 /* UIMgr.cpp */; };
 		3CAB287115BCFB150003DDE2 /* Shop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB287015BCFB150003DDE2 /* Shop.cpp */; };
@@ -205,6 +205,7 @@
 		3CAB288215BD0E3D0003DDE2 /* Friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287E15BD0E3D0003DDE2 /* Friends.png */; };
 		3CAB288315BD0E3D0003DDE2 /* Shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287F15BD0E3D0003DDE2 /* Shop.png */; };
 		3CAB28A615BDC40E0003DDE2 /* box.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB28A515BDC40E0003DDE2 /* box.xml */; };
+		3CAB28CB15BF23080003DDE2 /* ObjectDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -613,8 +614,7 @@
 		3CAB285F15BCF7580003DDE2 /* DataMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = DataMgr.cpp; path = Classes/DataMgr.cpp; sourceTree = "<group>"; };
 		3CAB286015BCF7580003DDE2 /* DataMgr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataMgr.h; path = Classes/DataMgr.h; sourceTree = "<group>"; };
 		3CAB286115BCF7580003DDE2 /* DataType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataType.h; path = Classes/DataType.h; sourceTree = "<group>"; };
-		3CAB286215BCF7580003DDE2 /* FileSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileSystem.cpp; path = Classes/FileSystem.cpp; sourceTree = "<group>"; };
-		3CAB286315BCF7580003DDE2 /* FileSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FileSystem.h; path = Classes/FileSystem.h; sourceTree = "<group>"; };
+		3CAB286215BCF7580003DDE2 /* ObjectInfoMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ObjectInfoMgr.cpp; path = Classes/ObjectInfoMgr.cpp; sourceTree = "<group>"; };
 		3CAB286615BCF7580003DDE2 /* SceneGame.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SceneGame.cpp; path = Classes/SceneGame.cpp; sourceTree = "<group>"; };
 		3CAB286715BCF7580003DDE2 /* SceneGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SceneGame.h; path = Classes/SceneGame.h; sourceTree = "<group>"; };
 		3CAB286815BCF7580003DDE2 /* UIMgr.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = UIMgr.cpp; path = Classes/UIMgr.cpp; sourceTree = "<group>"; };
@@ -626,6 +626,8 @@
 		3CAB287E15BD0E3D0003DDE2 /* Friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Friends.png; path = Resources/Friends.png; sourceTree = "<group>"; };
 		3CAB287F15BD0E3D0003DDE2 /* Shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shop.png; path = Resources/Shop.png; sourceTree = "<group>"; };
 		3CAB28A515BDC40E0003DDE2 /* box.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = box.xml; path = Resources/box.xml; sourceTree = "<group>"; };
+		3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = ObjectDB.sqlite; path = Resources/ObjectDB.sqlite; sourceTree = "<group>"; };
+		3CAB28CC15BFCA1B0003DDE2 /* ObjectInfoMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjectInfoMgr.h; path = Classes/ObjectInfoMgr.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -700,6 +702,7 @@
 		3C9364C515B0FF6300860E6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */,
 				3CAB28A515BDC40E0003DDE2 /* box.xml */,
 				3C9364C615B0FF6300860E6A /* CloseNormal.png */,
 				3CAB287C15BD0E3D0003DDE2 /* Edit.png */,
@@ -1514,8 +1517,8 @@
 			isa = PBXGroup;
 			children = (
 				3CAB286115BCF7580003DDE2 /* DataType.h */,
-				3CAB286215BCF7580003DDE2 /* FileSystem.cpp */,
-				3CAB286315BCF7580003DDE2 /* FileSystem.h */,
+				3CAB286215BCF7580003DDE2 /* ObjectInfoMgr.cpp */,
+				3CAB28CC15BFCA1B0003DDE2 /* ObjectInfoMgr.h */,
 				3CAB25A115B7BDBB0003DDE2 /* Mgr */,
 			);
 			name = Data;
@@ -1632,6 +1635,7 @@
 				3CAB288215BD0E3D0003DDE2 /* Friends.png in Resources */,
 				3CAB288315BD0E3D0003DDE2 /* Shop.png in Resources */,
 				3CAB28A615BDC40E0003DDE2 /* box.xml in Resources */,
+				3CAB28CB15BF23080003DDE2 /* ObjectDB.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1809,7 +1813,7 @@
 				3C93672B15B0FF6600860E6A /* RootViewController.mm in Sources */,
 				3CAB25C215B815230003DDE2 /* AppDelegate.cpp in Sources */,
 				3CAB286A15BCF7590003DDE2 /* DataMgr.cpp in Sources */,
-				3CAB286B15BCF7590003DDE2 /* FileSystem.cpp in Sources */,
+				3CAB286B15BCF7590003DDE2 /* ObjectInfoMgr.cpp in Sources */,
 				3CAB286D15BCF7590003DDE2 /* SceneGame.cpp in Sources */,
 				3CAB286E15BCF7590003DDE2 /* UIMgr.cpp in Sources */,
 				3CAB287115BCFB150003DDE2 /* Shop.cpp in Sources */,

@@ -9,25 +9,21 @@
 #include "DataMgr.h"
 #include "CCFileUtils.h"
 
-DataMgr::DataMgr()
+DataMgr::DataMgr(const char *ObjectDBName)
 {
-
-    
+    m_pObjectInfoMgr = new ObjectInfoMgr(ObjectDBName);
 }
 
 DataMgr::~DataMgr()
 {
-    
+    if(m_pObjectInfoMgr)
+    {
+        delete m_pObjectInfoMgr;
+        m_pObjectInfoMgr = NULL;
+    }
 }
 
-bool DataMgr::loadData(const char *DBPath)
+ObjectInfoMgr* DataMgr::GetObjectInfoMgr()
 {
-//    SQLiteiOS *sql = [[SQLiteiOS alloc] initWithLoadDBPath:[NSString stringWithUTF8String:DBPath]];
-//    
-//    [sql searchData:@"SELECT * FROM objectDB"];
-
-//    fileUtil.
-    
-    
-    return true;
+    return m_pObjectInfoMgr;
 }
