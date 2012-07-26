@@ -271,7 +271,7 @@ bool Map::init()
 float Map::filtScale(float scale)
 {
     if (scale < 0.75) scale = 0.75;
-    if (scale > 2) scale = 2;
+    if (scale > 1.75) scale = 1.75;
     
     return scale;
 }

@@ -73,12 +73,7 @@ struct CROP_INFO : public COMMON_INFO, public OBJECT_INFO
     }
 };
 
-<<<<<<< HEAD
 struct ORNAMENT_INFO : public COMMON_INFO
-=======
-//CA Edit 120725 ORANAMENT -> ORNAMENT
-struct ORNAMENT_INFO : public ITEM_INFO
->>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 {
     ORNAMENT_INFO() : COMMON_INFO()
     {

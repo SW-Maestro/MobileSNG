@@ -5,7 +5,7 @@
 //  Created by 박 진 on 12. 7. 19..
 //  Copyright (c) 2012년 __MyCompanyName__. All rights reserved.
 //
-
+/*
 #include "DataMgr.h"
 #include "CCFileUtils.h"
 
@@ -26,4 +26,4 @@ DataMgr::~DataMgr()
 ObjectInfoMgr* DataMgr::GetObjectInfoMgr()
 {
     return m_pObjectInfoMgr;
-}
+}*/

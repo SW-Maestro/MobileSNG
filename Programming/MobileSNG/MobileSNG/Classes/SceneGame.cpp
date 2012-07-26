@@ -37,8 +37,8 @@ bool SceneGame::init()
     m_pMap = new Map();
     m_pMap->init();
     m_pMap->setAnchorPoint(ccp(0.5, 0.5));
-    m_pMap->setScale(2);
-    m_pMap->setPosition(ccp(wsize.width, wsize.height));
+    m_pMap->setScale(1);
+    m_pMap->setPosition(ccp(wsize.width / 2, wsize.height / 2));
     addChild(m_pMap, 0);
 
     return true;
