@@ -1,9 +1,10 @@
 #include "SceneGame.h"
+#include "Map.h"
 
 using namespace cocos2d;
 
 
-SceneGame::SceneGame()
+SceneGame::SceneGame() : m_pMap(NULL)
 {
     m_pUIMgr = NULL;
 }
@@ -11,6 +12,8 @@ SceneGame::SceneGame()
 SceneGame::~SceneGame()
 {
     removeAllChildrenWithCleanup(true);
+    
+    SAFE_DELETE(m_pMap);
     
     if(m_pUIMgr)
     {
@@ -27,12 +30,16 @@ bool SceneGame::init()
     m_pUIMgr->CreateUI(reinterpret_cast<CCScene*>(this),
                        menu_selector(SceneGame::_editFunc), menu_selector(SceneGame::_flatFunc));
 
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-    pSprite->setAnchorPoint(CCPointMake(0, 0));
-    pSprite->setPosition(CCPointMake(0, 0));
- 
-    this->addChild(pSprite, 0);
-    addChild(m_pUIMgr);
+    addChild(m_pUIMgr, 1);
+    
+    CCSize wsize = CCDirector::sharedDirector()->getWinSize();
+    
+    m_pMap = new Map();
+    m_pMap->init();
+    m_pMap->setAnchorPoint(ccp(0.5, 0.5));
+    m_pMap->setScale(2);
+    m_pMap->setPosition(ccp(wsize.width, wsize.height));
+    addChild(m_pMap, 0);
 
     return true;
 }

@@ -3,10 +3,13 @@
 #include "cocos2d.h"
 #include "UIMgr.h"
 
+class Map;
+
 class SceneGame : public cocos2d::CCLayer
 {
 private:
-    UIMgr           *m_pUIMgr;
+    Map             * m_pMap;
+    UIMgr           * m_pUIMgr;
     
 public:
     SceneGame();

@@ -17,7 +17,7 @@ class DataMgr
 private:
     std::vector<BUILDING_INFO>      m_buildInfo;
     std::vector<CROP_INFO>          m_cropInfo;
-    std::vector<ORANAMENT_INFO>     m_oranamentInfo;
+    std::vector<ORNAMENT_INFO>     m_ornamentInfo;
     
 public:
     DataMgr();

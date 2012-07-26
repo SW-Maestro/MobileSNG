@@ -63,7 +63,8 @@ struct CROP_INFO : public OBJECT_INFO, public ITEM_INFO
     }
 };
 
-struct ORANAMENT_INFO : public ITEM_INFO
+//CA Edit 120725 ORANAMENT -> ORNAMENT
+struct ORNAMENT_INFO : public ITEM_INFO
 {
     
 };

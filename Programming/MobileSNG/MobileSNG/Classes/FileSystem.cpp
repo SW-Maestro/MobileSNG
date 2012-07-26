@@ -43,12 +43,12 @@ CROP_INFO FileSystem::searchCropInfo(char *name)
     
 }
 
-ORANAMENT_INFO FileSystem::searchOranamentInfo(int id)
+ORNAMENT_INFO FileSystem::searchOrnamentInfo(int id)
 {
     
 }
 
-ORANAMENT_INFO FileSystem::searchOranamentInfo(char *name)
+ORNAMENT_INFO FileSystem::searchOrnamentInfo(char *name)
 {
     
 }

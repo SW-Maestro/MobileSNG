@@ -26,6 +26,6 @@ public:
     CROP_INFO       searchCropInfo(int id);
     CROP_INFO       searchCropInfo(char *name);
 
-    ORANAMENT_INFO  searchOranamentInfo(int id);
-    ORANAMENT_INFO  searchOranamentInfo(char *name);
+    ORNAMENT_INFO  searchOrnamentInfo(int id);
+    ORNAMENT_INFO  searchOrnamentInfo(char *name);
 };
