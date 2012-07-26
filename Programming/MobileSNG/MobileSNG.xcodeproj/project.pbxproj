@@ -205,10 +205,18 @@
 		3CAB288215BD0E3D0003DDE2 /* Friends.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287E15BD0E3D0003DDE2 /* Friends.png */; };
 		3CAB288315BD0E3D0003DDE2 /* Shop.png in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB287F15BD0E3D0003DDE2 /* Shop.png */; };
 		3CAB28A615BDC40E0003DDE2 /* box.xml in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB28A515BDC40E0003DDE2 /* box.xml */; };
+<<<<<<< HEAD
 		3CAB28CB15BF23080003DDE2 /* ObjectDB.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */; };
 		3CAB28CE15BFD4980003DDE2 /* GameSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB28CD15BFD4970003DDE2 /* GameSystem.cpp */; };
 		3CAB28DD15C04EB90003DDE2 /* StateSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB28DB15C04EB80003DDE2 /* StateSystem.cpp */; };
 		3CAB28E215C04EFF0003DDE2 /* BuildingSystem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3CAB28E115C04EFF0003DDE2 /* BuildingSystem.cpp */; };
+=======
+		C51B140315BED2C6008491C2 /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C51B140215BED2C6008491C2 /* Map.cpp */; };
+		C51B140715BEF478008491C2 /* MapTile.cpp in Sources */ = {isa = PBXBuildFile; fileRef = C51B140615BEF478008491C2 /* MapTile.cpp */; };
+		C5402C5215C03C340042F24A /* Farm.png in Resources */ = {isa = PBXBuildFile; fileRef = C5402C5115C03C340042F24A /* Farm.png */; };
+		C57F18F115BF8FFE0055C208 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = C57F18F015BF8FFE0055C208 /* Background.png */; };
+		C57F18FC15BF92530055C208 /* Tile.png in Resources */ = {isa = PBXBuildFile; fileRef = C57F18FB15BF92530055C208 /* Tile.png */; };
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -629,6 +637,7 @@
 		3CAB287E15BD0E3D0003DDE2 /* Friends.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Friends.png; path = Resources/Friends.png; sourceTree = "<group>"; };
 		3CAB287F15BD0E3D0003DDE2 /* Shop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Shop.png; path = Resources/Shop.png; sourceTree = "<group>"; };
 		3CAB28A515BDC40E0003DDE2 /* box.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = box.xml; path = Resources/box.xml; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; name = ObjectDB.sqlite; path = Resources/ObjectDB.sqlite; sourceTree = "<group>"; };
 		3CAB28CC15BFCA1B0003DDE2 /* ObjectInfoMgr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ObjectInfoMgr.h; path = Classes/ObjectInfoMgr.h; sourceTree = "<group>"; };
 		3CAB28CD15BFD4970003DDE2 /* GameSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameSystem.cpp; path = Classes/GameSystem.cpp; sourceTree = "<group>"; };
@@ -642,6 +651,15 @@
 		3CAB28DC15C04EB90003DDE2 /* StateSystem.h */ = {isa = PBXFileReference; fileEncoding = 4; name = StateSystem.h; path = Classes/StateSystem.h; sourceTree = "<group>"; };
 		3CAB28E115C04EFF0003DDE2 /* BuildingSystem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BuildingSystem.cpp; sourceTree = "<group>"; };
 		3CAB28E315C04F090003DDE2 /* BuildingSystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuildingSystem.h; sourceTree = "<group>"; };
+=======
+		C51B13FF15BED292008491C2 /* Map.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Map.h; path = Classes/Map.h; sourceTree = "<group>"; };
+		C51B140215BED2C6008491C2 /* Map.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Map.cpp; path = Classes/Map.cpp; sourceTree = "<group>"; };
+		C51B140515BEF46A008491C2 /* MapTile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MapTile.h; path = Classes/MapTile.h; sourceTree = "<group>"; };
+		C51B140615BEF478008491C2 /* MapTile.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = MapTile.cpp; path = Classes/MapTile.cpp; sourceTree = "<group>"; };
+		C5402C5115C03C340042F24A /* Farm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Farm.png; path = Resources/Farm.png; sourceTree = "<group>"; };
+		C57F18F015BF8FFE0055C208 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Background.png; path = Resources/Background.png; sourceTree = "<group>"; };
+		C57F18FB15BF92530055C208 /* Tile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Tile.png; path = Resources/Tile.png; sourceTree = "<group>"; };
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -706,9 +724,9 @@
 			isa = PBXGroup;
 			children = (
 				3CAB259815B7AB6F0003DDE2 /* Data */,
+				C57F18E915BF86AC0055C208 /* Object */,
 				3CAB259A15B7AB7A0003DDE2 /* ObjectMgr */,
 				3CAB259215B7A9730003DDE2 /* Scene */,
-				3CAB259115B7A96D0003DDE2 /* Data */,
 				3CAB258F15B7A9420003DDE2 /* AppDelegate */,
 			);
 			path = MobileSNG;
@@ -717,7 +735,13 @@
 		3C9364C515B0FF6300860E6A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				3CAB28CA15BF23080003DDE2 /* ObjectDB.sqlite */,
+=======
+				C5402C5115C03C340042F24A /* Farm.png */,
+				C57F18FB15BF92530055C208 /* Tile.png */,
+				C57F18F015BF8FFE0055C208 /* Background.png */,
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 				3CAB28A515BDC40E0003DDE2 /* box.xml */,
 				3C9364C615B0FF6300860E6A /* CloseNormal.png */,
 				3CAB287C15BD0E3D0003DDE2 /* Edit.png */,
@@ -1495,13 +1519,6 @@
 			name = AppDelegate;
 			sourceTree = "<group>";
 		};
-		3CAB259115B7A96D0003DDE2 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Data;
-			sourceTree = "<group>";
-		};
 		3CAB259215B7A9730003DDE2 /* Scene */ = {
 			isa = PBXGroup;
 			children = (
@@ -1514,7 +1531,11 @@
 		3CAB259315B7A9780003DDE2 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+<<<<<<< HEAD
 				3CAB28DE15C04ED20003DDE2 /* System */,
+=======
+				C51B140115BED2B4008491C2 /* Map */,
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 				3CAB286615BCF7580003DDE2 /* SceneGame.cpp */,
 				3CAB286715BCF7580003DDE2 /* SceneGame.h */,
 				3CAB285815BCEF7B0003DDE2 /* UI */,
@@ -1584,6 +1605,7 @@
 			name = what;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3CAB28D015BFD9D90003DDE2 /* RapidXML */ = {
 			isa = PBXGroup;
 			children = (
@@ -1612,10 +1634,35 @@
 				3CAB28E015C04EEE0003DDE2 /* Building */,
 				3CAB28DB15C04EB80003DDE2 /* StateSystem.cpp */,
 				3CAB28DC15C04EB90003DDE2 /* StateSystem.h */,
+=======
+		C51B140115BED2B4008491C2 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				C51B140415BEF45A008491C2 /* Tile */,
+				C51B140215BED2C6008491C2 /* Map.cpp */,
+				C51B13FF15BED292008491C2 /* Map.h */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		C51B140415BEF45A008491C2 /* Tile */ = {
+			isa = PBXGroup;
+			children = (
+				C51B140615BEF478008491C2 /* MapTile.cpp */,
+				C51B140515BEF46A008491C2 /* MapTile.h */,
+			);
+			name = Tile;
+			sourceTree = "<group>";
+		};
+		C57F18E915BF86AC0055C208 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 			);
 			name = Object;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		3CAB28E015C04EEE0003DDE2 /* Building */ = {
 			isa = PBXGroup;
 			children = (
@@ -1625,6 +1672,8 @@
 			name = Building;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1693,7 +1742,13 @@
 				3CAB288215BD0E3D0003DDE2 /* Friends.png in Resources */,
 				3CAB288315BD0E3D0003DDE2 /* Shop.png in Resources */,
 				3CAB28A615BDC40E0003DDE2 /* box.xml in Resources */,
+<<<<<<< HEAD
 				3CAB28CB15BF23080003DDE2 /* ObjectDB.sqlite in Resources */,
+=======
+				C57F18F115BF8FFE0055C208 /* Background.png in Resources */,
+				C57F18FC15BF92530055C208 /* Tile.png in Resources */,
+				C5402C5215C03C340042F24A /* Farm.png in Resources */,
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1875,9 +1930,14 @@
 				3CAB286D15BCF7590003DDE2 /* SceneGame.cpp in Sources */,
 				3CAB286E15BCF7590003DDE2 /* UIMgr.cpp in Sources */,
 				3CAB287115BCFB150003DDE2 /* Shop.cpp in Sources */,
+<<<<<<< HEAD
 				3CAB28CE15BFD4980003DDE2 /* GameSystem.cpp in Sources */,
 				3CAB28DD15C04EB90003DDE2 /* StateSystem.cpp in Sources */,
 				3CAB28E215C04EFF0003DDE2 /* BuildingSystem.cpp in Sources */,
+=======
+				C51B140315BED2C6008491C2 /* Map.cpp in Sources */,
+				C51B140715BEF478008491C2 /* MapTile.cpp in Sources */,
+>>>>>>> e8d7f9bb19545c609dee500a6e60af2b28670ce7
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

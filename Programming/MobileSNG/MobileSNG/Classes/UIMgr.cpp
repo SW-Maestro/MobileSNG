@@ -92,6 +92,9 @@ bool UIMgr::CreateUI(cocos2d::CCScene *pScene, cocos2d::SEL_MenuHandler editFunc
     m_pMenu->initWithArray(ary);    
     addChild(m_pMenu);
     
+    //CA Append 120725
+    SAFE_DELETE(ary);
+    
     return true;
 }
 
