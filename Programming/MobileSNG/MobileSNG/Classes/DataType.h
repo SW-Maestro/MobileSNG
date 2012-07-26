@@ -28,19 +28,19 @@ struct OBJECT_INFO
     }
 };
 
-struct ITEM_INFO
+struct COMMON_INFO
 {
     int             objectID;
     int             price;
     std::string     name;
     
-    ITEM_INFO()
+    COMMON_INFO()
     {
         objectID = 0;
         price = 0;
     }
     
-    ITEM_INFO(int _objectID, const char *_name, int _price)
+    COMMON_INFO(int _objectID, const char *_name, int _price)
     {
         objectID    = _objectID;
         price       = _price;
@@ -48,44 +48,39 @@ struct ITEM_INFO
         name = _name;
     }
     
-    ~ITEM_INFO()
+    ~COMMON_INFO()
     {
         name.clear();
     }
 };
 
-struct BUILDING_INFO : public OBJECT_INFO, public ITEM_INFO
+struct BUILDING_INFO : public COMMON_INFO, public OBJECT_INFO
 {
-    int nowBuildTime;
-
-    BUILDING_INFO() : OBJECT_INFO(), ITEM_INFO() { nowBuildTime = 0; }
-    BUILDING_INFO(OBJECT_INFO objectInfo, ITEM_INFO itemInfo, 
-                  int _nowBuildTime) : OBJECT_INFO(objectInfo), 
-                                    ITEM_INFO(itemInfo)
+    BUILDING_INFO() : OBJECT_INFO(), COMMON_INFO() { }
+    BUILDING_INFO(OBJECT_INFO objectInfo, COMMON_INFO commonInfo) : OBJECT_INFO(objectInfo), COMMON_INFO(commonInfo)
     {
-        nowBuildTime = _nowBuildTime;
     }
 };
 
-struct CROP_INFO : public OBJECT_INFO, public ITEM_INFO
+struct CROP_INFO : public COMMON_INFO, public OBJECT_INFO
 {
-    CROP_INFO() : OBJECT_INFO(), ITEM_INFO() { }
+    CROP_INFO() : OBJECT_INFO(), COMMON_INFO() { }
     
-    CROP_INFO(OBJECT_INFO objectInfo, ITEM_INFO itemInfo) :
-    OBJECT_INFO(objectInfo), ITEM_INFO(itemInfo)
+    CROP_INFO(OBJECT_INFO objectInfo, COMMON_INFO commonInfo) :
+    OBJECT_INFO(objectInfo), COMMON_INFO(commonInfo)
     {
     
     }
 };
 
-struct ORNAMENT_INFO : public ITEM_INFO
+struct ORNAMENT_INFO : public COMMON_INFO
 {
-    ORNAMENT_INFO() : ITEM_INFO()
+    ORNAMENT_INFO() : COMMON_INFO()
     {
         
     }
     ORNAMENT_INFO(int _objectID, int _price, const char *_name) :
-    ITEM_INFO(_objectID, _name, _price)
+    COMMON_INFO(_objectID, _name, _price)
     {
         
     }
@@ -105,4 +100,16 @@ struct USER_INFO
         cash    = _cash;
         exp     = _exp;
     }
+};
+
+template<typename TYPE>
+struct POINT
+{
+    TYPE x, y;
+};
+
+template<typename TYPE>
+struct SIZE
+{
+    TYPE width, height;
 };
