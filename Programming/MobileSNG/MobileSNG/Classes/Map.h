@@ -14,10 +14,12 @@
 
 class MapTile;
 
+//CA Edit 120728 Move Touch to Game Scene
+
 class Map : public cocos2d::CCLayer
 {
 private:
-    cocos2d::CCSprite * m_pBackground;
+    cocos2d::CCSprite * m_pBackGround;
     
     cocos2d::CCPoint    m_touch[2];
     
@@ -40,9 +42,6 @@ public:
     ~Map();
     
     virtual bool init();
-    
-    virtual void onEnter();
-    virtual void onExit();
     
     virtual void ccTouchesBegan(cocos2d::CCSet * pTouches, cocos2d::CCEvent * pEvent);
     virtual void ccTouchesMoved(cocos2d::CCSet * pTouches, cocos2d::CCEvent * pEvent);

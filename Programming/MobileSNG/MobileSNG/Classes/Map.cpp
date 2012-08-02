@@ -97,9 +97,10 @@ int Map::_cursorXY(CCPoint cur)
     CCRect rc = boundingBox();
     float scale = getScale();
     
-    o.x -= (scale - 1) * rc.size.width / scale / 2;
+    o.x -= (scale - 1) * rc.size.width / scale / 2 + m_width / 2 * scale * MapTile::width;
     o.y -= (scale - 1) * rc.size.height / scale / 2;
     
+    /*
     for (int i = 0; i < m_width; ++i)
         for (int j = 0; j < m_width; ++j)
         {
@@ -113,19 +114,21 @@ int Map::_cursorXY(CCPoint cur)
         }
     
     return -1;
+     */
+    
+    cur = ccpSub(cur, o);
+    cur.x /= MapTile::width / 2 * scale;
+    cur.y /= MapTile::height / 2 * scale;
+    CCPoint t = ccp((cur.x - cur.y) / 2, (cur.x + cur.y) / 2);
+    
+    int x = round(t.x);
+    int y = round(t.y);
+    
+    if (x < 0 || y < 0 || x >= m_width || y >= m_width)
+        return -1;
+    
+    return x * m_width + y;
 }
-
-void Map::onEnter()
-{
-    //CCDirector::sharedDirector()->getTouchDispatcher()->addTargetedDelegate(this, 0, true);
-	CCLayer::onEnter();
-}
-
-void Map::onExit()
-{
-    //CCDirector::sharedDirector()->getTouchDispatcher()->removeDelegate(this);
-	CCLayer::onExit();
-}	
 
 void Map::ccTouchesBegan(CCSet * pTouches, CCEvent * pEvent)
 {
@@ -258,12 +261,10 @@ bool Map::init()
     m_arrTile = _create(m_width);
     _addTile();
     
-    m_pBackground = CCSprite::create("Background.png");
-    m_pBackground->setAnchorPoint(ccp(0.5, 0.5));
-    m_pBackground->setPosition(ccp(0, 0));
-    addChild(m_pBackground, 0);
-    
-    setTouchEnabled(true);
+    m_pBackGround = CCSprite::create("Background.png");
+    m_pBackGround->setAnchorPoint(ccp(0.5, 0.5));
+    m_pBackGround->setPosition(ccp(0, 0));
+    addChild(m_pBackGround, 0);
     
     return true;
 }

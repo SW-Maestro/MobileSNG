@@ -18,29 +18,17 @@ Shop::Shop()
 Shop::~Shop()
 {
     removeAllChildrenWithCleanup(true);
-    
-    if(m_pBackGround)
-    {
-        delete m_pBackGround;
-        m_pBackGround = NULL;
-    }
 }
 
 bool Shop::init()
-{
-    if( (m_pBackGround = CCSprite::create("HelloWorld.png")) == NULL )
-    {
-        CCLOG("%s <- Can't Create Shop BackGround", __FUNCTION__);
+{  
+    if (!CCLayer::init())
         return false;
-    }
-    else {
-        CCSize size = CCDirector::sharedDirector()->getWinSize();
-        
-        m_pBackGround->setPosition(CCPointMake(size.width/2.f, size.height/2.f));
-        m_pBackGround->setRotation(180.f);
-    }
     
-    
+    m_pBackGround = CCSprite::create("Shop-BackGround.png");
+    m_pBackGround->setAnchorPoint(ccp(0, 0));
+    m_pBackGround->setPosition(ccp(0, 0));
+
     addChild(m_pBackGround);
     
     return true;
